@@ -8,14 +8,41 @@ body {
  background-image: url("../images/concrete-texture.png") 
 }
 
+
+/*About Me*/
+
+.parallax-container {
+  position: relative;
+  overflow: hidden;
+  height: 500px;
+}
+
+/* .parallax-container, .parallax {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+} */
+
+
+#para-img {
+  display: block;
+  transform: translate3d(-50%, 338px, 0px);
+}
+
 #profile-pic {
-  width: 350px;
-  height: 350px;
+  float: left;
+  width: 325px;
+  height: 325px;
   margin: 10px;
   padding: 8px;
 }
 
 #about {
+  float: left;
+  clear: left;
   margin: 10px;
   padding: 10px;
   line-height: 34px;

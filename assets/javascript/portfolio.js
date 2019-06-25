@@ -1,11 +1,9 @@
 // nav bar 
 $(".dropdown-button").dropdown();
-        
-// carousel 
-
-
-$('.carousel.carousel-slider').carousel({
-  fullWidth: true,
-  indicators: true
-});
      
+
+// parallax on about page
+$(document).ready(function(){
+  $('.parallax').parallax();
+});
+    
