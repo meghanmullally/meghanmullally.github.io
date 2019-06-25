@@ -1,0 +1,38 @@
+* {
+  box-sizing: border-box; 
+}
+
+body {
+  margin: 0 auto;
+  padding: 0 auto;
+ background-image: url("../images/concrete-texture.png") 
+}
+
+#profile-pic {
+  width: 350px;
+  height: 350px;
+  margin: 10px;
+  padding: 8px;
+}
+
+#about {
+  margin: 10px;
+  padding: 10px;
+  line-height: 34px;
+}
+
+
+
+
+/*contact*/
+
+#contact-container {
+  margin-top: 70px;
+  padding: 20px;
+  border: solid lightgray 2px;
+  justify-content: center;
+}
+
+/* #contact-btn {
+  
+} */
