@@ -22,7 +22,19 @@ body {
 }
 
 
+/*Portfolio*/
 
+.card {
+  width: 300px;
+  height: auto;
+  margin-top: 70px;
+}
+
+#gif-img, #jewel-img, #lmn-img {
+  width: 300px;
+  height: auto;
+ 
+}
 
 /*contact*/
 
