@@ -63,6 +63,14 @@ height: auto;
 }
 
 
+
+/* Buttons  */
+#aboutMe {
+  
+}
+
+
+
 /*About Me*/
 
 .parallax-container {
@@ -158,3 +166,65 @@ button {
   height: 200px;
   background: transparent;
 } */
+
+
+/* portfolio gallery  */
+
+.row {
+  margin: 8px -16px;
+}
+
+/* Add padding BETWEEN each column (if you want) */
+.row,
+.row > .column {
+  padding: 8px;
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 33.33%;
+  display: none; /* Hide columns by default */
+  /* margin: 5px; */
+}
+
+/* Clear floats after rows */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Content */
+.content {
+  background-color: white;
+  padding: 10px;
+}
+
+/* The "show" class is added to the filtered elements */
+.show {
+  display: block;
+}
+
+/* Style the buttons */
+.btn {
+  border: none;
+  outline: none;
+  padding: 10px;
+  padding-top: 0;
+  margin: 4px;
+  background-color: grey;
+  cursor: pointer;
+  text-align: center;
+}
+
+/* Add a grey background color on mouse-over */
+.btn:hover {
+  background-color: #ddd;
+}
+
+/* Add a dark background color to the active button */
+.btn.active {
+  background-color: #666;
+  color: white;
+}
