@@ -48,8 +48,8 @@ body {
   cursor: pointer;
 }
 
-.hero-text a:hover {
-  background-color: #555;
+.hero-text  a:hover {
+  background-color: #fff;
   color: white;
 }
 
@@ -71,28 +71,12 @@ height: auto;
   height: 800px;
 }
 
-/* .title {
-  color: white;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
-}
-
-button {
-  background-color: black;
-  margin: 8px;
+/* #connect {
+  margin: 25px;
   padding: 10px;
-} */
-
-/* .parallax-container, .parallax {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  z-index: -1;
+  float: right;
+  text-align: center;
+  border: black 2px solid;
 } */
 
 
@@ -147,27 +131,12 @@ button {
   height: auto;
 }
 
-/*contact*/
-
-#contact-container {
-  margin-top: 70px;
-  padding: 20px;
-  border: solid lightgray 2px;
-  justify-content: center;
-}
-
-/* #contact-btn {
-  
-} */
-
 
 /*Footer*/
 
-/* #foot {
-  height: 200px;
-  background: transparent;
-} */
+/* #connectMe {
 
+} */
 
 /* portfolio gallery  */
 
