@@ -63,14 +63,6 @@ height: auto;
 }
 
 
-
-/* Buttons  */
-#aboutMe {
-  
-}
-
-
-
 /*About Me*/
 
 .parallax-container {
@@ -126,12 +118,21 @@ button {
 
 #about {
   float: left;
-  clear: left;
+  clear: both;
   margin: 10px;
   padding: 10px;
   line-height: 34px;
 }
 
+
+.hobby {
+  flex: 25%;
+  /* max-width: 25%; */
+  padding: 0 4px;
+  margin-top: 8px;
+  /* vertical-align: middle; */
+  width: 100%;
+}
 
 /*Portfolio*/
 
