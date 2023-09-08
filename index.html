@@ -21,29 +21,42 @@
 </head>
 
 <body>
-  <!-- <div class="hero-image"> -->
+  <!-- <div class="header">
+    <a href="#default" class="logo">CompanyLogo</a>
+    <div class="header-right">
+      <a class="active" href="#home">Home</a>
+      <a href="#contact">Contact</a>
+      <a href="#about">About</a>
+    </div>
+  </div> -->
+  
+  <!-- <div style="padding-left:20px">
+    <h1>Responsive Header</h1>
+    <p>Resize the browser window to see the effect.</p>
+    <p>Some content..</p>
+  </div> -->
   <div class="hero-text">
-    <!-- <h1 style="font-size:50px">I am Meghan Mullally</h1>
-      <p>And I'm a Web Developer</p>  -->
+    <!-- <h1 style="font-size:50px">I am Meghan Mullally</h1> -->
+      <!-- <p>And I'm a Web Developer</p>  -->
     <img src="assets/images/logos/black logos-07.png" id="initial-logo">
   </div>
 
   <div class="parallax-container">
-    <div class="parallax"><img id="para-img"
-        src="./assets/images/background-image/pineapple-supply-co-hiV4fUpSX1c-unsplash.jpg"></div>
+    <div class="parallax">
+      <img id="para-img"
+        src="./assets/images/background-image/augustine-wong-kTg4NXEmfs8-unsplash.jpg"></div>
   </div>
   <div class="section white" id="aboutMe">
     <div class="container">
       <div class="row">
         <h2 class="header black-text">About Me</h2>
         <div class="column">
-          <img src="assets/images/904008_928239260578634_8719483825659606254_o.jpg" id="profile-pic" alt="photo of me">
+          <img src="assets/images/1615237624247.jpeg" id="profile-pic" alt="photo of me">
         </div>
-        <p class="black-text text-darken-3 lighten-3" id="about">Hi, my name is Meghan Mullally! I’m 24 years old, born
-          and raised in Seattle, WA. I’m a Washington State University graduate with a BA in Management Information
-          Systems. I also recently completed the University of Washington’s Full Stack Coding Boot Camp for web
-          development. I am extremely organized, ambitious, and enjoy managing project teams. You can find me traveling,
-          eating delicious food, spending time with my family and dogs, or playing tennis and golf.
+        <p class="black-text text-darken-3 lighten-3" id="about">
+          Hello, I'm Meghan, a tech professional with a diverse skill set spanning web development and technical support. 
+          With a background in both software engineering and customer-centric technical roles, I bring a unique blend of problem-solving and development skills to the table. 
+          Whether it's crafting seamless web applications or providing top-tier support.
         </p>
       </div>
 
@@ -72,20 +85,20 @@
   </div>
 
 
-  <div class="parallax-container">
+  <!-- <div class="parallax-container">
     <div class="parallax"><img id="para-img"
         src="./assets/images/background-image/madison-ralg-fcWAwPKpkTU-unsplash.jpg"></div>
-  </div>
+  </div> -->
   <div class="section white">
     <!-- Portfolio Gallery Grid -->
     <div class="container">
       <div class="row">
-        <h2 class="header black-text">My Work</h2>
+        <h2 class="header black-text">Projects from Bootcamp</h2>
         <div id="myBtnContainer">
           <button class="btn active" onclick="filterSelection('all')">Show all</button>
           <button class="btn" onclick="filterSelection('hw')">Homework</button>
           <button class="btn" onclick="filterSelection('project')">Projects</button>
-          <button class="btn" onclick="filterSelection('side')">Side Projects</button>
+          <!-- <button class="btn" onclick="filterSelection('side')">Side Projects</button> -->
           <button class="btn" onclick="filterSelection('vue')">Vue </button>
           <button class="btn" onclick="filterSelection('react')">React</button>
         </div>
@@ -160,7 +173,7 @@
                 <p><a href="https://github.com/meghanmullally/unit-4-game">Code</a></p>
               </div>
               <div class="card-reveal">
-                <span class="card-title grey-text text-darken-4"><i class="material-icons right">close</i>Details</span>
+                <span class="card-title grey-text text-darken-4"><i class="material-icons right">close</i>Crystal Collector Details</span>
                 <p>
                   The user is given a random number once they click the play button. The user will click on the 4
                   different
@@ -243,7 +256,7 @@
               </div>
               <div class="card-reveal">
                 <span class="card-title black-text text-darken-4"><i
-                    class="material-icons right">close</i>Details</span>
+                    class="material-icons right">close</i>Gif Generator Details</span>
                 <p>When you click on the buttons, 10 types of gifs will pop up for each individual button. The gifs
                   appearing on
                   the page will have their Ratings above them (G, PG, PG-13, R). The user can also click on the gif to
@@ -333,7 +346,7 @@
               </div>
               <div class="card-reveal">
                 <span class="card-title black-text text-darken-4"><i
-                    class="material-icons right">close</i>Details</span>
+                    class="material-icons right">close</i>Group Project 1.2.0 Details</span>
                 <p>Project 1 but 2.0 version.
                 </p>
               </div>
@@ -384,7 +397,7 @@
           <div class="column" id="connectMe">
             <h5 class="black-text">Connect</h5>
             <ul>
-              <li><a class="black-text text-lighten-3" href="mailto:ms.mullally27@gmail.com"> <i id="font-icon"
+              <li><a class="black-text text-lighten-3" href="mailto:meghan.mullallyjobs@gmail.com"> <i id="font-icon"
                     class="	fa fa-address-book"></i> Email
                 </a></li>
               <li><a class="black-text text-lighten-3" href="https://github.com/meghanmullally"> <i id="font-icon"
@@ -392,16 +405,13 @@
                 </a></li>
               <li><a class="black-text text-lighten-3" href="https://www.linkedin.com/in/meghanmullally/"><i
                     id="font-icon" class="fab fa-linkedin"></i> Linkedin</a></li>
-              <li><a class="black-text text-lighten-3" href="https://twitter.com/MeghanMullally"><i id="font-icon"
-                    class="fab fa-twitter"></i> Twitter
-                </a></li>
             </ul>
           </div>
         </div>
       </div>
       <div class="footer-copyright">
         <div class="container black-text">
-          © 2019 Meghan Mullally
+          © 2023 Meghan Mullally
         </div>
       </div>
     </footer>
