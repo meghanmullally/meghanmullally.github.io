@@ -1,0 +1,37 @@
+.about {
+    padding: 60px 20px;
+    background-color: #f4f4f4;
+    text-align: center;
+  }
+  
+  .about h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .about-content {
+    max-width: 800px;
+    margin: 0 auto;
+    font-size: 1.2em;
+    color: #666;
+    line-height: 1.6;
+  }
+  
+  .about-image {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    margin-bottom: 20px;
+  }
+  
+  .about-social-links a {
+    margin: 0 10px;
+    color: #333;
+    text-decoration: none;
+    font-size: 1.5em;
+  }
+  
+  .about-social-links a:hover {
+    color: #555;
+  }
