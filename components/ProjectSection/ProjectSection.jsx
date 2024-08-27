@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import ProjectCard from './ProjectCard';
+import ProjectCard from '../ProjectCard/ProjectCard';
 
 function ProjectSection() {
   const [selectedCategory, setSelectedCategory] = useState('All');
