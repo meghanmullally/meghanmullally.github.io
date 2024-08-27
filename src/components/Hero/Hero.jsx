@@ -1,9 +1,9 @@
 import React from 'react';
-import './Hero.module.css';
+import styles from './Hero.module.css';
 
 function Hero() {
   return (
-    <section className="hero">
+    <section className={styles.hero}>
       <h1>Hi, I'm Meghan Mullally</h1>
       <p>A passionate front-end developer base in Seattle, Washington</p>
     </section>
