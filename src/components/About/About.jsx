@@ -1,11 +1,13 @@
 import React from 'react';
-import "./About.module.css";
+import styles from './About.module.css';
 
 function About() {
   return (
-    <section id="about">
+    <section className={styles.about}>
       <h2>About Me</h2>
-      <p>Hello, I'm Meghan, a tech professional with a diverse skill set spanning web development and technical support...</p>
+      <div className={styles['about-content']}>
+        <p>Hello, I'm Meghan, a tech professional with a diverse skill set spanning web development and technical support...</p>
+      </div>
     </section>
   );
 }

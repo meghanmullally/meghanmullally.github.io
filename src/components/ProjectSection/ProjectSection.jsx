@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import ProjectCard from '../ProjectCard/ProjectCard';
+import styles from './ProjectSection.module.css'
 
 function ProjectSection() {
   const [selectedCategory, setSelectedCategory] = useState('All');
@@ -10,7 +11,7 @@ function ProjectSection() {
   const filteredProjects = projects.filter(project => selectedCategory === 'All' || project.category === selectedCategory);
 
   return (
-    <section id="projects">
+    <section className={styles.projectSection}>
       <h2>My Projects</h2>
       <div>
         <button onClick={() => setSelectedCategory('All')}>All</button>
