@@ -9,6 +9,8 @@ import gifTasticImg from '../../assets/images/projects/gifTastic.png';
 import project1LmnImg from '../../assets/images/projects/project1-lmn.png';
 import project1_2LmnImg from '../../assets/images/projects/project1-2.0.png';
 import lmnNewsImg from '../../assets/images/projects/lmn-news.png';
+import weatherAppImg from '../../assets/images/projects/weather-app-img.png';
+import cafeImg from '../../assets/images/projects/cafe-img.png';
 
 function ProjectSection() {
   const [selectedCategory, setSelectedCategory] = useState('All');
@@ -102,6 +104,23 @@ function ProjectSection() {
       liveLink: 'https://viaduct12.github.io/project-3/discover',
       description: 'A website that provides a wide range of news outlets and topics to discover. Users can find news on selected categories.',
     },
+    {id: 11,
+      title: 'Weather App',
+      category: 'Recent',
+      imgSrc: weatherAppImg,
+      githubLink: 'https://github.com/meghanmullally/weather',
+      liveLink: 'https://weather-bice-theta.vercel.app/',
+      description: 'The Weather App displays the current weather of a searched city along with a 5-day forecast.',
+    },
+    {
+      id: 12,
+      title: 'Meghan\'s Cafe',
+      category: 'Recent',
+      imgSrc: cafeImg,
+      githubLink: 'https://github.com/meghanmullally/cafe',
+      liveLink: 'https://www.codedex.io/@meghansm/build/meghans-cafe',
+      description: 'An improved version of LMN Travel with additional features and a new design.',
+    },
   ];
 
   const filteredProjects = projects.filter(
@@ -113,9 +132,9 @@ function ProjectSection() {
       <h2>My Projects</h2>
       <div>
         <button onClick={() => setSelectedCategory('All')}>All</button>
+        <button onClick={() => setSelectedCategory('Recent')}>Recent</button>
         <button onClick={() => setSelectedCategory('Homework')}>Homework</button>
         <button onClick={() => setSelectedCategory('Projects')}>Projects</button>
-        <button onClick={() => setSelectedCategory('Recent')}>Recent</button>
       </div>
       <div className={styles.projectList}>
         {filteredProjects.map((project) => (
