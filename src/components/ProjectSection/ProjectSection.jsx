@@ -11,6 +11,7 @@ import project1_2LmnImg from '../../assets/images/projects/project1-2.0.png';
 import lmnNewsImg from '../../assets/images/projects/lmn-news.png';
 import weatherAppImg from '../../assets/images/projects/weather-app-img.png';
 import cafeImg from '../../assets/images/projects/cafe-img.png';
+import pokeImg from '../../assets/images/projects/pokeImg.png';
 
 function ProjectSection() {
   const [selectedCategory, setSelectedCategory] = useState('All');
@@ -104,13 +105,14 @@ function ProjectSection() {
       liveLink: 'https://viaduct12.github.io/project-3/discover',
       description: 'A website that provides a wide range of news outlets and topics to discover. Users can find news on selected categories.',
     },
-    {id: 11,
-      title: 'Weather App',
+    {
+      id: 11,
+      title: 'Pokémon App',
       category: 'Recent',
-      imgSrc: weatherAppImg,
-      githubLink: 'https://github.com/meghanmullally/weather',
-      liveLink: 'https://weather-bice-theta.vercel.app/',
-      description: 'The Weather App displays the current weather of a searched city along with a 5-day forecast.',
+      imgSrc: pokeImg,
+      githubLink: 'https://github.com/meghanmullally/pokemon',
+      liveLink: 'https://poketrainercentral.netlify.app/',
+      description: 'After a break of 2.5 years, I decided to get back into coding with a project centered around Pokémon. This application is built using React.js, JavaScript, Redux, and Material UI. The goal of this project is to reacquaint myself with coding and pick up new skills, for example on Redux.',
     },
     {
       id: 12,
@@ -119,7 +121,15 @@ function ProjectSection() {
       imgSrc: cafeImg,
       githubLink: 'https://github.com/meghanmullally/cafe',
       liveLink: 'https://www.codedex.io/@meghansm/build/meghans-cafe',
-      description: 'An improved version of LMN Travel with additional features and a new design.',
+      description: 'Welcome to Meghan\'s Cafe! This project showcases a simple restaurant menu with an order form. It\'s a part of the final project for the HTML course on Codédex.',
+    },
+    {id: 13,
+      title: 'Weather App',
+      category: 'Recent',
+      imgSrc: weatherAppImg,
+      githubLink: 'https://github.com/meghanmullally/weather',
+      liveLink: 'https://weather-bice-theta.vercel.app/',
+      description: 'The Weather App displays the current weather of a searched city along with a 5-day forecast.It\'s a part of the final project for the Javascript course on Codédex.',
     },
   ];
 
