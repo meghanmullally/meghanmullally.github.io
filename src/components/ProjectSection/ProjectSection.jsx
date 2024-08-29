@@ -138,7 +138,7 @@ function ProjectSection() {
   );
 
   return (
-    <section className={styles.projectSection}>
+    <section className={styles.projectSection} id="projects">
       <h2>My Projects</h2>
       <div>
         <button onClick={() => setSelectedCategory('All')}>All</button>
