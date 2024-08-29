@@ -28,8 +28,8 @@ function Header() {
         {/* Desktop Menu */}
         <Box sx={{ display: { xs: 'none', md: 'flex' }, ml: 'auto' }}>
           <Button color="inherit" href="#hero">Home</Button>
-          <Button color="inherit" href="#projects">Projects</Button>
           <Button color="inherit" href="#about">About</Button>
+          <Button color="inherit" href="#projects">Projects</Button>
           <Button color="inherit" href="#contact">Contact</Button>
         </Box>
 
@@ -63,8 +63,8 @@ function Header() {
             onClose={handleMenuClose}
           >
             <MenuItem onClick={handleMenuClose} component="a" href="#hero" className={styles.menuItem}>Home</MenuItem>
-            <MenuItem onClick={handleMenuClose} component="a" href="#projects" className={styles.menuItem}>Projects</MenuItem>
             <MenuItem onClick={handleMenuClose} component="a" href="#about" className={styles.menuItem}>About</MenuItem>
+            <MenuItem onClick={handleMenuClose} component="a" href="#projects" className={styles.menuItem}>Projects</MenuItem>
             <MenuItem onClick={handleMenuClose} component="a" href="#contact" className={styles.menuItem}>Contact</MenuItem>
           </Menu>
         </Box>
