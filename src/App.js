@@ -11,8 +11,8 @@ function App() {
     <div className="App">
       <Header />
       <Hero />
-      <ProjectSection />
       <About />
+      <ProjectSection />
       <Contact />
       <Footer />
     </div>
