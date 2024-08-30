@@ -15,12 +15,16 @@ import pokeImg from '../../assets/images/projects/pokeImg.png';
 
 function ProjectSection() {
   const [selectedCategory, setSelectedCategory] = useState('All');
+  const [selectedSubCategory, setSelectedSubCategory] = useState('All');
+
 
   const projects = [
     {
       id: 1,
       title: 'Bamazon',
-      category: 'Homework',
+      category: 'Bootcamp',
+      subCategory: 'Homework',
+      year: 2019,
       imgSrc: 'https://github.com/meghanmullally/Bamazon/raw/master/assets/images/customer.png?raw=true',
       githubLink: 'https://github.com/meghanmullally/Bamazon',
       description: 'This is an Amazon-like storefront created with MySQL and NodeJS. The app takes orders from customers and depletes stock accordingly. It also tracks product sales across departments and summarizes the highest-grossing departments.',
@@ -28,7 +32,9 @@ function ProjectSection() {
     {
       id: 2,
       title: 'Clicky Game',
-      category: 'Homework',
+      category: 'Bootcamp',
+      subCategory: 'Homework',
+      year: 2019,
       imgSrc: clickyGameImg,
       githubLink: 'https://github.com/meghanmullally/clickyGame',
       liveLink: 'https://meghanmullally.github.io/clickyGame/',
@@ -37,7 +43,9 @@ function ProjectSection() {
     {
       id: 3,
       title: 'Crystal Collector',
-      category: 'Homework',
+      category: 'Bootcamp',
+      subCategory: 'Homework',
+      year: 2019,
       imgSrc: jewelGameImg,
       githubLink: 'https://github.com/meghanmullally/unit-4-game',
       liveLink: 'https://meghanmullally.github.io/unit-4-game/',
@@ -46,7 +54,9 @@ function ProjectSection() {
     {
       id: 4,
       title: 'Eat the Burger',
-      category: 'Homework',
+      category: 'Bootcamp',
+      subCategory: 'Homework',
+      year: 2019,
       imgSrc: burgerImg,
       githubLink: 'https://github.com/meghanmullally/Eat-Da-Burger',
       liveLink: 'https://yummmyyyburger.herokuapp.com/',
@@ -55,7 +65,9 @@ function ProjectSection() {
     {
       id: 5,
       title: 'Friend-Finder',
-      category: 'Homework',
+      category: 'Bootcamp',
+      subCategory: 'Homework',
+      year: 2019,
       imgSrc: friendFinderImg,
       githubLink: 'https://github.com/meghanmullally/Friend-Finder',
       liveLink: 'https://mmfriendfinder.herokuapp.com/',
@@ -64,7 +76,9 @@ function ProjectSection() {
     {
       id: 6,
       title: 'Gif Generator',
-      category: 'Homework',
+      category: 'Bootcamp',
+      subCategory: 'Homework',
+      year: 2019,
       imgSrc: gifTasticImg,
       githubLink: 'https://github.com/meghanmullally/GifTastic',
       liveLink: 'https://meghanmullally.github.io/GifTastic/',
@@ -73,7 +87,9 @@ function ProjectSection() {
     {
       id: 7,
       title: 'LIRI',
-      category: 'Homework',
+      category: 'Bootcamp',
+      subCategory: 'Homework',
+      year: 2019,
       imgSrc: 'https://github.com/meghanmullally/LIRI/blob/master/assets/image/LIRI.png?raw=true',
       githubLink: 'https://github.com/meghanmullally/LIRI',
       description: 'LIRI is a Language Interpretation and Recognition Interface. It is similar to Siri but is used via the command line to take in parameters and give back data.',
@@ -81,7 +97,9 @@ function ProjectSection() {
     {
       id: 8,
       title: 'Project 1 LMN Travel',
-      category: 'Projects',
+      category: 'Bootcamp',
+      subCategory: 'Projects',
+      year: 2019,
       imgSrc: project1LmnImg,
       githubLink: 'https://github.com/meghanmullally/lmn',
       liveLink: 'https://meghanmullally.github.io/lmn/home',
@@ -90,7 +108,9 @@ function ProjectSection() {
     {
       id: 9,
       title: 'Project 1: 2.0 LMN Travel',
-      category: 'Projects',
+      category: 'Bootcamp',
+      subCategory: 'Projects',
+      year: 2019,
       imgSrc: project1_2LmnImg,
       githubLink: 'https://github.com/meghanmullally/travel-lmn',
       liveLink: 'https://travel-lmn.herokuapp.com/',
@@ -99,7 +119,9 @@ function ProjectSection() {
     {
       id: 10,
       title: 'Project 3 Learn More News',
-      category: 'Projects',
+      category: 'Bootcamp',
+      subCategory: 'Projects',
+      year: 2019,
       imgSrc: lmnNewsImg,
       githubLink: 'https://github.com/viaduct12/project-3',
       liveLink: 'https://viaduct12.github.io/project-3/discover',
@@ -109,6 +131,7 @@ function ProjectSection() {
       id: 11,
       title: 'Pokémon App',
       category: 'Recent',
+      year: 2024,
       imgSrc: pokeImg,
       githubLink: 'https://github.com/meghanmullally/pokemon',
       liveLink: 'https://poketrainercentral.netlify.app/',
@@ -118,6 +141,7 @@ function ProjectSection() {
       id: 12,
       title: 'Meghan\'s Cafe',
       category: 'Recent',
+      year: 2024,
       imgSrc: cafeImg,
       githubLink: 'https://github.com/meghanmullally/cafe',
       liveLink: 'https://www.codedex.io/@meghansm/build/meghans-cafe',
@@ -126,6 +150,7 @@ function ProjectSection() {
     {id: 13,
       title: 'Weather App',
       category: 'Recent',
+      year: 2024,
       imgSrc: weatherAppImg,
       githubLink: 'https://github.com/meghanmullally/weather',
       liveLink: 'https://weather-bice-theta.vercel.app/',
@@ -134,18 +159,25 @@ function ProjectSection() {
   ];
 
   const filteredProjects = projects.filter(
-    (project) => selectedCategory === 'All' || project.category === selectedCategory
+    (project) =>
+      (selectedCategory === 'All' || project.category === selectedCategory) &&
+      (selectedSubCategory === 'All' || project.subCategory === selectedSubCategory)
   );
 
   return (
     <section className={styles.projectSection} id="projects">
       <h2>My Projects</h2>
-      <div>
-        <button onClick={() => setSelectedCategory('All')}>All</button>
-        <button onClick={() => setSelectedCategory('Recent')}>Recent</button>
-        <button onClick={() => setSelectedCategory('Homework')}>Homework</button>
-        <button onClick={() => setSelectedCategory('Projects')}>Projects</button>
+      <div className={styles.buttonContainer}>
+        <button className={selectedCategory === 'All' ? styles.active : ''} onClick={() => { setSelectedCategory('All'); setSelectedSubCategory('All'); }}>All</button>
+        <button className={selectedCategory === 'Recent' ? styles.active : ''} onClick={() => setSelectedCategory('Recent')}>Recent</button>
+        <button className={selectedCategory === 'Bootcamp' ? styles.active : ''} onClick={() => setSelectedCategory('Bootcamp')}>Bootcamp</button>
       </div>
+      {selectedCategory === 'Bootcamp' && (
+      <div className={styles.buttonContainer}>
+      <button className={selectedSubCategory === 'Homework' ? styles.active : ''} onClick={() => setSelectedSubCategory('Homework')}>Homework</button>
+          <button className={selectedSubCategory === 'Projects' ? styles.active : ''} onClick={() => setSelectedSubCategory('Projects')}>Projects</button>
+        </div>
+      )}
       <div className={styles.projectList}>
         {filteredProjects.map((project) => (
           <ProjectCard key={project.id} project={project} />
