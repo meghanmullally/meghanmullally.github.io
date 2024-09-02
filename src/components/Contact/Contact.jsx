@@ -10,28 +10,28 @@ function Contact() {
     message: "",
   });
 
-  const handleChange = (event) => {
-    const { name, value } = event.target;
-    setFormData({
-      ...formData,
-      [name]: value,
-    });
-  };
+  // const handleChange = (event) => {
+  //   const { name, value } = event.target;
+  //   setFormData({
+  //     ...formData,
+  //     [name]: value,
+  //   });
+  // };
 
-  const handleSubmit = (event) => {
-    event.preventDefault();
+  // const handleSubmit = (event) => {
+  //   event.preventDefault();
 
-    // Prepare the form data for submission using FormData
-    const form = event.target;
-    const formData = new FormData(form);
+  //   // Prepare the form data for submission using FormData
+  //   const form = event.target;
+  //   const formData = new FormData(form);
 
-    fetch("/", {
-      method: "POST",
-      body: formData,
-    })
-      .then(() => alert("Thank you for your submission"))
-      .catch((error) => alert("Submission failed. Please try again later."));
-  };
+  //   fetch("/", {
+  //     method: "POST",
+  //     body: formData,
+  //   })
+  //     .then(() => alert("Thank you for your submission"))
+  //     .catch((error) => alert("Submission failed. Please try again later."));
+  // };
 
   return (
     <section className={styles.contact} id="contact">
