@@ -20,24 +20,35 @@ function Contact() {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    console.log(formData);
-    // Form submission is handled by Netlify, so no additional code is needed here
+
+    // Prepare the form data for submission
+    const encodedData = new URLSearchParams(formData).toString();
+
+    fetch("/", {
+      method: "POST",
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      body: encodedData,
+    })
+      .then(() => alert("Thank you for your submission"))
+      .catch((error) => alert(error));
   };
 
   return (
     <section className={styles.contact} id="contact">
       <h2>Contact Me</h2>
       <div className={styles.contactContainer}>
-        <form
-          id="contactForm"
-          onSubmit={handleSubmit}
-          method="POST"
-          data-netlify="true"
-          name="contact"
-        >
-          {/* Hidden input for Netlify form name */}
+        {/* Hidden HTML form for Netlify detection */}
+        <form name="contact" netlify>
           <input type="hidden" name="form-name" value="contact" />
+          <input type="hidden" name="firstName" />
+          <input type="hidden" name="lastName" />
+          <input type="hidden" name="email" />
+          <input type="hidden" name="subject" />
+          <input type="hidden" name="message" />
+        </form>
 
+        {/* Visible form for users */}
+        <form id="contactForm" onSubmit={handleSubmit} method="POST">
           <h3>Name (Required)</h3>
           <div className={styles.formRow}>
             <div className={styles.formGroup}>
