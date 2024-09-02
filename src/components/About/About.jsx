@@ -4,7 +4,7 @@ import self from '../../assets/images/self.jpeg';
 
 function About() {
   return (
-    <section className={styles.about}>
+    <section className={styles.about} id="about">
       <h1>About Me</h1>
       <div className={styles.aboutContent}>
         <div className={styles.imageDetailsContainer}>
