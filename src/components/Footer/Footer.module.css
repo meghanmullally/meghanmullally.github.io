@@ -16,6 +16,25 @@
     margin-bottom: 20px;
 }
 
+.logo {
+    width: 100%;
+    max-width: 125px;
+    height: 125px;
+}
+
+.quick-links, .social-links {
+    display: flex;
+    flex-direction: column;
+}
+
+.quick-links h4, .social-links h4 {
+    margin: 0 auto;
+}
+
+.quick-links a, .social-links a {
+    padding-top: 10px;
+}
+
 .footer a {
     color: #fff;
     text-decoration: none;
