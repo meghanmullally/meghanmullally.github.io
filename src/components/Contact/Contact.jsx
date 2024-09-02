@@ -21,13 +21,23 @@ function Contact() {
   const handleSubmit = (event) => {
     event.preventDefault();
     console.log(formData);
+    // Form submission is handled by Netlify, so no additional code is needed here
   };
 
   return (
     <section className={styles.contact} id="contact">
       <h2>Contact Me</h2>
       <div className={styles.contactContainer}>
-        <form id="contactForm" onSubmit={handleSubmit}>
+        <form
+          id="contactForm"
+          onSubmit={handleSubmit}
+          method="POST"
+          data-netlify="true"
+          name="contact"
+        >
+          {/* Hidden input for Netlify form name */}
+          <input type="hidden" name="form-name" value="contact" />
+
           <h3>Name (Required)</h3>
           <div className={styles.formRow}>
             <div className={styles.formGroup}>
