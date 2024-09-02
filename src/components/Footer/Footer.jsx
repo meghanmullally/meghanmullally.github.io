@@ -3,56 +3,52 @@ import styles from "./Footer.module.css";
 import Box from "@mui/material/Box";
 import Grid from "@mui/material/Grid2";
 import logo from "../../assets/images/logos/white/white-logos-06.png";
+import GitHubIcon from "@mui/icons-material/GitHub";
+import LinkedInIcon from "@mui/icons-material/LinkedIn";
+import EmailIcon from "@mui/icons-material/Email";
 
 function Footer() {
   return (
     <Box sx={{ flexGrow: 1 }} className={styles.footer}>
-      <Grid container spacing={3}>
-        <Grid size={3}>
-          <img src={logo} className={styles.logo} alt="MM white logo" />
+      <Grid container spacing={3} justifyContent="space-around">
+        <Grid item xs={12} sm={6} md={3} className={styles.footerSection}>
+      <img src={logo} className={styles.logo} alt="MM white logo" />
         </Grid>
-        <Grid size={3}>
-          <div className={styles["quick-links"]}>
+        <Grid item xs={12} sm={6} md={3} className={styles.footerSection}>
+          <nav className={styles.quickLinks}>
             <h4>Quick Links</h4>
             <a href="#hero">Back to Top</a>
             <a href="#about">About</a>
             <a href="#projects">Projects</a>
             <a href="#contact">Contact</a>
-          </div>
+          </nav>
         </Grid>
-        <Grid size={3}>
-          <div className={styles["social-links"]}>
-            <h4>Follow Me</h4>
-            <a
-              href="https://github.com/meghanmullally"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              GitHub
-            </a>
-            <a
-              href="https://www.linkedin.com/in/meghan-mullally/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              LinkedIn
-            </a>
-          </div>
-          {/* </div> */}
-        </Grid>
-        <Grid size={3}>
-          <div className="contact-info">
-            <h4>Contact</h4>
-            <p>
-              Email:{" "}
-              <a href="mailto:meghan.mullallyjobs@gmail.com">
-                meghan.mullallyjobs@gmail.com
+        <Grid item xs={12} sm={6} md={3} className={styles.footerSection}>
+          <div className={styles.contactSection}>
+            <h4>Connect with Me</h4>
+            <div className={styles.socialIcons}>
+              <a
+                href="https://github.com/meghanmullally"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <GitHubIcon fontSize="large" />
               </a>
-            </p>
+              <a
+                href="https://www.linkedin.com/in/meghan-mullally/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <LinkedInIcon fontSize="large" />
+              </a>
+              <a href="mailto:meghan.mullallyjobs@gmail.com">
+                <EmailIcon fontSize="large" />
+              </a>
+            </div>
           </div>
         </Grid>
       </Grid>
-      <div className="footer-bottom">
+      <div className={styles.footerBottom}>
         <p>
           © {new Date().getFullYear()} Meghan Mullally. All rights reserved.
         </p>
