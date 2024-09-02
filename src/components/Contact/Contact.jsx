@@ -37,18 +37,18 @@ function Contact() {
     <section className={styles.contact} id="contact">
       <h2>Contact Me</h2>
       <div className={styles.contactContainer}>
-        {/* Hidden HTML form for Netlify detection */}
-        <form name="contact" netlify>
+        {/* Combined form for Netlify detection and user interaction */}
+        <form
+          id="contactForm"
+          onSubmit={handleSubmit}
+          method="POST"
+          action="/"
+          data-netlify="true"
+          name="contact"
+        >
+          {/* Hidden input to identify form name for Netlify */}
           <input type="hidden" name="form-name" value="contact" />
-          <input type="hidden" name="firstName" />
-          <input type="hidden" name="lastName" />
-          <input type="hidden" name="email" />
-          <input type="hidden" name="subject" />
-          <input type="hidden" name="message" />
-        </form>
 
-        {/* Visible form for users */}
-        <form id="contactForm" onSubmit={handleSubmit} method="POST">
           <h3>Name (Required)</h3>
           <div className={styles.formRow}>
             <div className={styles.formGroup}>
