@@ -21,28 +21,26 @@ function Contact() {
   const handleSubmit = (event) => {
     event.preventDefault();
 
-    // Prepare the form data for submission
-    const encodedData = new URLSearchParams(formData).toString();
+    // Prepare the form data for submission using FormData
+    const form = event.target;
+    const formData = new FormData(form);
 
     fetch("/", {
       method: "POST",
-      headers: { "Content-Type": "application/x-www-form-urlencoded" },
-      body: encodedData,
+      body: formData,
     })
       .then(() => alert("Thank you for your submission"))
-      .catch((error) => alert(error));
+      .catch((error) => alert("Submission failed. Please try again later."));
   };
 
   return (
     <section className={styles.contact} id="contact">
       <h2>Contact Me</h2>
       <div className={styles.contactContainer}>
-        {/* Combined form for Netlify detection and user interaction */}
         <form
           id="contactForm"
           onSubmit={handleSubmit}
           method="POST"
-          action="/"
           data-netlify="true"
           name="contact"
         >
