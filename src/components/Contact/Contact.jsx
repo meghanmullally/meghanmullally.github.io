@@ -2,13 +2,13 @@ import React, { useState } from "react";
 import styles from "./Contact.module.css";
 
 function Contact() {
-  const [formData, setFormData] = useState({
-    firstName: "",
-    lastName: "",
-    email: "",
-    subject: "",
-    message: "",
-  });
+  // const [formData, setFormData] = useState({
+  //   firstName: "",
+  //   lastName: "",
+  //   email: "",
+  //   subject: "",
+  //   message: "",
+  // });
 
   // const handleChange = (event) => {
   //   const { name, value } = event.target;
