@@ -21,9 +21,8 @@ function About() {
           <div className={styles.imageContainer}>
             <img
               src={self}
-              alt="Meghan Mullally"
+              alt="professional shot of Meghan Mullally"
               className={styles.aboutImage}
-              role="img"
             />
           </div>
 
