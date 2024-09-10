@@ -1,3 +1,16 @@
+:root {
+  --color-cloud-white: #fefcf6;
+  --color-forest-green: #5e6c5b;
+  --color-midnight: #162a2c;
+  --color-olive-green: #707c4f;
+}
+
+/* Other global styles */
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
 .App {
   text-align: center;
 }

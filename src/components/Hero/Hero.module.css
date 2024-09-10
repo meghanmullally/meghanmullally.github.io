@@ -1,5 +1,7 @@
 .hero {
-    background-color: #f4f4f4;
+    background-color: var(--color-cloud-white);
+    background-blend-mode: multiply;
+    background-size: cover;
     padding: 60px 20px;
     text-align: center;
 }
@@ -7,11 +9,11 @@
 .hero h1 {
     font-size: 3em;
     margin-bottom: 10px;
-    color: #333;
+    color: var(--color-midnight);
 }
 
 .hero p {
     font-size: 1.5em;
     margin-bottom: 20px;
-    color: #666;
+    color: var(--color-midnight);
 }

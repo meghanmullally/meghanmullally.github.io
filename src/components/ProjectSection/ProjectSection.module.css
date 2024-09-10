@@ -1,6 +1,6 @@
 .projectSection {
   padding: 60px 20px;
-  background-color: #f4f4f4;
+  background-color: #fefcf6;
   text-align: center;
 }
 
@@ -11,26 +11,28 @@
 .buttonContainer button {
   margin: 0 4px;
   padding: 10px 20px;
-  border: 2px solid #333;
+  border: 2px solid #5e6c5b;
   border-radius: 5px;
-  background-color: white;
-  color: #333;
+  background-color: #fefcf6;
+  color:#162a2c;
   font-size: 16px;
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
 
 .buttonContainer button:hover {
-  background-color: #e7e7e7;
+  background-color: #707c4f;
+  color: #fefcf6;
 }
 
 .buttonContainer button:active {
-  background-color: #d5d5d5;
+  background-color: #5e6c5b;
+  color: #fefcf6;
 }
 
 .buttonContainer button.active {
-  background-color: #333;
-  color: white;
+  background-color:#162a2c;
+  color: #fefcf6;
 }
 
 .projectList {

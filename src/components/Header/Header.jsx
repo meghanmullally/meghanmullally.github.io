@@ -21,7 +21,7 @@ function Header() {
   };
 
   return (
-    <AppBar position="static" sx={{ backgroundColor: "#5e6c5b" }} className={styles.header}>
+    <AppBar position="static" sx={{ backgroundColor: "#4E5424" }} className={styles.header}>
       <Toolbar>
         <img src={logo} alt="Logo" className={styles.logo} />
 
