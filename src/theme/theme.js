@@ -16,10 +16,6 @@ const theme = createTheme({
         text: {
             primary: "#162a2c", // midnight shade for primary text
             secondary: "#5e6c5b", // forest green shade for secondary text
-        },
-        button: {
-            primary: "#5e6c5b",
-            secondary: "#fefcf6",
         }
     },
 });
