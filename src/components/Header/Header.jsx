@@ -21,16 +21,16 @@ function Header() {
   };
 
   return (
-    <AppBar position="static" sx={{ backgroundColor: '#333' }} className={styles.header}>
+    <AppBar position="static" sx={{ backgroundColor: "#4E5424" }} className={styles.header}>
       <Toolbar>
         <img src={logo} alt="Logo" className={styles.logo} />
 
         {/* Desktop Menu */}
-        <Box sx={{ display: { xs: 'none', md: 'flex' }, ml: 'auto' }}>
-          <Button color="inherit" href="#hero">Home</Button>
-          <Button color="inherit" href="#about">About</Button>
-          <Button color="inherit" href="#projects">Projects</Button>
-          <Button color="inherit" href="#contact">Contact</Button>
+        <Box sx={{display: { xs: 'none', md: 'flex' }, ml: 'auto' }}>
+          <Button sx={{color: '#fefcf6'}} color="inherit" href="#hero">Home</Button>
+          <Button sx={{color: '#fefcf6'}} color="inherit" href="#about">About</Button>
+          <Button sx={{color: '#fefcf6'}} color="inherit" href="#projects">Projects</Button>
+          <Button sx={{color: '#fefcf6'}} color="inherit" href="#contact">Contact</Button>
         </Box>
 
         {/* Mobile Menu */}

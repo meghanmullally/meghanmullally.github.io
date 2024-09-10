@@ -28,7 +28,7 @@
   width: 275px;
   height: 275px;
   object-fit: cover;
-  border: 4px solid #eee;
+  border: 6px double #5e6c5b;
 }
 
 .detailsContainer {
